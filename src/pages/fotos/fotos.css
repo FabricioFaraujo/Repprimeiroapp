@@ -1,0 +1,73 @@
+.fotos-cards-conteiner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.fotos-conteiner {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 70px;
+}
+.cards {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 0 20px 10px;
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.cards:hover {
+    transform: scale(1.05);
+}
+.fbanner-1 {
+    background-image: url(https://www.lucidsky.co/cdn/shop/products/CSMDenji_13x19_Smartpress-20221114_070320932.jpg?v=1669319520&width=1445);
+}
+.fbanner-2 {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dc447491-6737-4557-885d-08ec11515e82/dfg2jzq-87ecc312-f481-42b4-9183-f4296f769d53.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RjNDQ3NDkxLTY3MzctNDU1Ny04ODVkLTA4ZWMxMTUxNWU4MlwvZGZnMmp6cS04N2VjYzMxMi1mNDgxLTQyYjQtOTE4My1mNDI5NmY3NjlkNTMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.kVegFtWH-jhK58tC93x_WACcBEnf8tu9TLkCg7mAGp4);
+    background-color: white;
+}
+.fbanner-3 {
+    background-image: url(https://i.etsystatic.com/19028598/r/il/9756b7/3285447983/il_1080xN.3285447983_tqu9.jpg);
+}
+.fbanner-4 {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0d01bb7a-b1d8-4223-9857-349d22f96baa/dg1qtbu-c31db1f0-565e-4cd1-8e91-afea9c07a24a.jpg/v1/fill/w_1280,h_1920,q_75,strp/power___chainsaw_man_by_awesomeportal_dg1qtbu-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBkMDFiYjdhLWIxZDgtNDIyMy05ODU3LTM0OWQyMmY5NmJhYVwvZGcxcXRidS1jMzFkYjFmMC01NjVlLTRjZDEtOGU5MS1hZmVhOWMwN2EyNGEuanBnIiwiaGVpZ2h0IjoiPD0xOTIwIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvMGQwMWJiN2EtYjFkOC00MjIzLTk4NTctMzQ5ZDIyZjk2YmFhXC9hd2Vzb21lcG9ydGFsLTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.L7iM0W3_pLTvIk6eyh5ev3ma73Oj-OjtMYn_UoaUGhM);
+}
+.fbanner-5 {
+    background-image: url(https://s1.zerochan.net/Hayakawa.Aki.600.4001377.jpg);
+}
+.fbanner-6 {
+    background-image: url(https://i.ebayimg.com/images/g/0MkAAOSw~09jrQ5O/s-l1200.webp);
+}
+
+@media(max-width: 750px) {
+
+    .fotos-cards-conteiner {
+        margin-bottom: 10px;
+    }
+
+    .cards {
+        width: auto;
+        height: 200px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .fotos-conteiner {
+        width: 90%;
+        row-gap: 0px;
+        column-gap: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

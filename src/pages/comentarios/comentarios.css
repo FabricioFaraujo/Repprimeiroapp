@@ -1,0 +1,60 @@
+#cometario-contaner {
+    width: 100%;
+    height: 300px;
+    background-color: purple;
+    display: flex;
+}
+#foto {
+    width: 20%;
+    height: auto;
+}
+#comente-container {
+    width: 80%;
+    border: ridge black 5px;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 90%;
+    height: 40px;
+}
+
+.opinioes-container {
+    width: 100%;
+    height: 500px;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.opinioes {
+    width: 80%;
+    height: 50px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+@media(max-width: 750px) {
+
+    #cometario-contaner {
+        width: 100%;
+        height: 100px;
+    }
+
+    #foto {
+        width: 20%;
+        height: auto;
+    }
+    input {
+        height: 10px;
+    }
+}

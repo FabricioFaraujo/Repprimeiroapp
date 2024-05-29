@@ -1,0 +1,63 @@
+.actor-cards-conteiner {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: black;
+}
+.cards-conteiner {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 70px;
+}
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 50px;
+    padding: 0 0 20px 10px;
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.banner-1 {
+    background-image: url(https://www.lucidsky.co/cdn/shop/products/CSMDenji_13x19_Smartpress-20221114_070320932.jpg?v=1669319520&width=1445);
+}
+.banner-2 {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dc447491-6737-4557-885d-08ec11515e82/dfg2jzq-87ecc312-f481-42b4-9183-f4296f769d53.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RjNDQ3NDkxLTY3MzctNDU1Ny04ODVkLTA4ZWMxMTUxNWU4MlwvZGZnMmp6cS04N2VjYzMxMi1mNDgxLTQyYjQtOTE4My1mNDI5NmY3NjlkNTMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.kVegFtWH-jhK58tC93x_WACcBEnf8tu9TLkCg7mAGp4);
+    background-color: white;
+}
+.banner-3 {
+    background-image: url(https://i.etsystatic.com/19028598/r/il/9756b7/3285447983/il_1080xN.3285447983_tqu9.jpg);
+}
+
+@media(max-width: 750px) {
+
+    .cards-conteiner {
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        height: 200px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .actor-cards-conteiner {
+        height: 200px;
+    }
+}
